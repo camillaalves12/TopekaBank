@@ -145,7 +145,18 @@ label {
     font-weight: 600;
 }
 
+.curracy {
+    width: 7rem;
+    height: 3rem;
+    border-radius: 1rem;
+    border: 2px solid #fff;
+    background: #4b006b;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
 .btnConverter {
     width: 10rem;
     height: 3rem;
 }
+
