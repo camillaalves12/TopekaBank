@@ -3,6 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Georama', sans-serif;
+    text-transform: uppercase;
 }
 
 a {
@@ -22,12 +23,12 @@ a {
 
 button {
     padding: 0.4rem;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     border: 2px solid #fff;
     background: #4b006b;
     cursor: pointer;
     color: #fff;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
 }
 
 button:hover {
@@ -45,7 +46,7 @@ button:hover {
 }
 
 .logoNav {
-    font-size: 2.4rem;
+    font-size: 2rem;
 }
 
 .container {
@@ -64,7 +65,7 @@ button:hover {
 }
 
 .title {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
     color: #4b006b;
 
@@ -116,18 +117,20 @@ footer {
 .titleConversor {
     text-align: center;
     margin: 2rem;
+    margin-bottom: 7rem;
 }
+
 
 .caixas {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     align-items: center;
-
-    
-} 
-.caixa {
-    margin: 2rem;
     text-align: center;
+}
+
+.caixa {
+    display: flex;
+    flex-direction: column;
 }
 
 input {
@@ -140,10 +143,6 @@ input {
     text-align: center;
 }
 
-label {
-    font-size: 1.4rem;
-    font-weight: 600;
-}
 
 .curracy {
     width: 7rem;
@@ -155,8 +154,29 @@ label {
     font-size: 1.1rem;
 }
 
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem;
+} 
+
+label {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
 .btnConverter {
     width: 10rem;
     height: 3rem;
 }
 
+option::placeholder {
+    background-color: #4b006b;
+}
+
+select {
+    text-align: center;
+    border: none;
+    outline: none;
+}
