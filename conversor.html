@@ -34,48 +34,26 @@
       </div>
 
       <div class="buttons">
-         <select name="curracy" class="curracy">
-            <option value="Dolar">USD</option>
-            <option value="Euro">EUR</option>
-         </select>
-         <button class="btnConverter" id="btn" onclick="ConverterDolar()">Converter</button>
+
+         <button class="btnConverter" id="btn" onclick="ConverterDolar()">Converter em Dolar</button>
+         <button class="btnConverter" id="btn" onclick="ConverterEuro()">Converter em Euro</button>
       </div>
 
       <div class="caixa2 caixa">
 
          <label for="caixa1">valor convertido</label>
+         <input type="number" class="input01" >
          <p class="input01" id="result"></p>
+         
       </div>
 
    </div>
 
 
+   <footer>
+      <p class="footerText">Copyright &#169 2022 TopekaBank</p>
+   </footer>
 
-
-
-
-   <script>
-      function ConverterDolar() {
-         var valorDolar = document.getElementById("inputValue").value;
-
-         console.log(valorDolar);
-         /* 1 real brasileiro vale 0.20 em dolar*/
-
-         var valorReal = valorDolar * 0.2;
-         var valorRealFixado = valorReal.toFixed(2);
-
-         valorDolar = document.getElementById("result");
-         valorDolar.innerHTML = valorDolar
-        
-
-         
-      }
-
-   </script>
-  
-
-  <footer>
-   <p class="footerText">Copyright &#169 2022 TopekaBank</p>
-</footer>
+   <script src="/script.js"></script>
 </body>
 </html>
