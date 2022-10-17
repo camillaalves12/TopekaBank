@@ -1,7 +1,8 @@
 function ConverterDolar () {
 let valorReal = document.getElementById('inputValue').value;
+let USD = " USD"
 
-valorDolar = valorReal * 0.2;
+valorDolar = valorReal *  0.1893;
 
 let valorDolarFixado = valorDolar.toFixed(2);
 
@@ -9,53 +10,24 @@ let resultado = document.getElementById("result");
 
 let resultadoFinal = valorDolarFixado
 
-resultado.innerHTML = resultadoFinal;
+resultado.innerHTML = resultadoFinal + USD;
 
 }
 
 
 function ConverterEuro () {
 let valorReal = document.getElementById('inputValue').value;
+let EUR = " EUR"; 
 
-valorEuro = valorReal * 0.4;
+valorEuro = valorReal * 0.1944;
 
 let valorEuroFixado = valorEuro.toFixed(2);
 
 let resultado = document.getElementById("result");
 
-let resultadoFinal = valorEuroFixado
+let resultadoFinal = valorEuroFixado 
 
-resultado.innerHTML = resultadoFinal;
+resultado.innerHTML = resultadoFinal + EUR;
 
 }
 
-
-
-// function ConverterDolar() {
-//   var valorDolar = document.getElementById("inputValue").value;
-//   /* 1 real brasileiro vale 0.20 em dolar*/
-
-//   var valorReal = valorDolar * 0.2;
-//   var valorRealFixado = valorReal.toFixed(2);
-
-//   var elementoConvertido = document.getElementById("result");
-//   var valorConvertido = "O resultado em Dólar é R$ " + valorRealFixado;
-
-//   //elementoConvertido.innerHTML = valorConvertido;
-// }
-
-
-
-
-
-// function ConverterEuro() {
-//   var valorEuro = document.getElementById("inputValue").value;
-//   /*1 real brasileir vale 018 em euro */
-//   var valorReal = valorEuro * 0.18;
-//   var valorRealFixado = valorReal.toFixed(2);
-
-//   var elementoConvertido = document.getElementById("input");
-//   var valorConvertido = "O resultado em Euro é R$ " + valorRealFixado;
-
-//  // elementoConvertido.innerHTML = valorConvertido;
-// }
