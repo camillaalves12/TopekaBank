@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* { 
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #4b006b;
+  background-image: linear-gradient(168deg, #4b006b 0%, #C850C0 62%);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;   
+}
+
+
+.header {
+   height: 54.19px;
+   text-align: center;
+   padding: 1rem;
+ }
+ 
+ .bodyConta{
+   margin-top: 5rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+ }
+ 
+
+
+ .criarConta {
+   display: flex;
+   gap: 8rem;
+   align-items: center
+ }
+ 
+ .titleContaTopeka{
+  font-size: 2.5rem;
+ }
+ .titleConta {
+   color: #FFFFFF;
+   font-weight: 600;
+   font-size: 3rem;
+   width: 500px;
+ }
+ 
+ .inputsConta {
+   width: 22rem;
+   height: 3rem;
+   outline: none;
+   background: none;
+   border: none;
+   border-bottom: 1px solid #cdcdcd;
+   color: #FFFFFF;
+ }
+ 
+ input:hover {
+   border-bottom: 1px solid #fff;
+ 
+ }
+ 
+ input::placeholder {
+   color: #fafafa;
+   padding: 0.5rem;
+ }
+ 
+ 
+ 
+ 
+ .formCriarConta {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+ }
+ 
+ .checkLabel {
+   margin-top: 1rem;
+   width: 22rem;
+ }
+ 
+ .boldText {
+   cursor: pointer;
+   color: #4b006b;
+ }
+ 
+ .btnEnviar {
+   padding: 0.5rem;
+   background: #4b006b;
+   cursor: pointer;
+   color: #fff;
+   font-size: 1.1rem;
+   border: none;
+   border-radius: 4px;
+   font-weight: 600;
+   margin-top: 1rem;
+ }
+ 
+ .btnEnviar:hover {
+     background: #70029f;
+ }
+ 
+
+  /* para tirar as setas do input number */
+  input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+  }
+  input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+  
+  }

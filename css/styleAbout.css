@@ -1,0 +1,13 @@
+.containerItensAbout {
+   display: flex;
+   margin: 1rem;
+   align-items: center;
+   flex-direction: column;
+}
+
+
+.containerItensAbout img{
+   max-width: 15rem;
+   width: auto;
+   height: auto;
+}

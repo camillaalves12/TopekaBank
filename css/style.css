@@ -4,7 +4,6 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
 }
 
 a {
@@ -17,23 +16,30 @@ a {
     align-items: center;
     justify-content: space-between;
     background: #4b006b;
-
     padding: 0.6rem;
     color: #fff;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #4b006b;
+    background-image: linear-gradient(168deg, #4b006b 0%, #C850C0 62%);
 }
 
 button {
-    padding: 0.4rem;
-    border-radius: 0.5rem;
-    border: 2px solid #fff;
+    padding: 0.5rem;
     background: #4b006b;
     cursor: pointer;
     color: #fff;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 4px;
 }
 
 button:hover {
-    background: #6f029e;
+    background: #70029f;
 }
 
 
@@ -41,14 +47,31 @@ button:hover {
     display: flex;
     gap: 1.5rem;
     align-items: center;
-    margin-right: 1rem;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     
 }
 
-.logoNav {
-    font-size: 2rem;
+.navItensItem:hover {
+    border-bottom: 1px solid #cdcdcd;
+    font-weight: 600;
+
 }
+
+.logoNav {
+    font-size: 1.8rem;
+}
+
+
+.containerItens img{
+    max-width:15rem;
+    width: auto;
+    height: auto;
+    box-shadow: 26px 26px 68px -16px rgba(0,0,0,0.66);
+    -webkit-box-shadow: 26px 26px 68px -16px rgba(0,0,0,0.66);
+    -moz-box-shadow: 26px 26px 68px -16px rgba(0,0,0,0.66);
+}
+
+
 
 .container {
     margin: 3rem;
@@ -61,24 +84,9 @@ button:hover {
     justify-content: center;
 }
 
-.containerItensAbout {
-    display: flex;
-    margin: 1rem;
-    align-items: center;
-    flex-direction: column;
-}
 
-.containerItens img{
-    max-width:15rem;
-    width: auto;
-    height: auto;
-}
 
-.containerItensAbout img{
-    max-width: 15rem;
-    width: auto;
-    height: auto;
-}
+
 
 .containerItensText {
     padding: 1rem;
@@ -87,147 +95,48 @@ button:hover {
 
 .containerItensText p{
     padding: 0.2rem;
+    color: #fff;
+    text-align: center;
+    font-size: 1.1rem;
     
 }
 
 .title {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: #4b006b;
+    color: #ffffff;
+    text-align: center;
 
 }
+
+
 
 .container02 {
     display: flex;
     flex-direction: column;
     align-items: center;
     line-height: 2rem;
-    margin-top: 5rem;
+    margin-top: 7rem;
+    color: #fff;
 }
 
 .titleContainer02 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 .subTitleContainer02 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .btnContainer02 {
-    margin-top: 3.5rem;
-    font-size: 1.4rem;
-    width: 20rem;
+    margin-top: 3rem;
+    font-size: 1.3rem;
+    width: 17rem;
     height: 4rem ;
 }
 
-footer {
-    background: #4b006b;
-    /* padding: 0.8rem;
-    margin-top: 1.8rem; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 2rem;
-}
-
-.footerAbout {
-    background: #4b006b;
-    /* padding: 0.8rem;
-    margin-top: 1.8rem; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 2rem;
-}
-
-.footerText {
-    color: #fff;
-    text-align: center;
-}
 
 
 
-.titleConversor {
-    text-align: center;
-    margin: 2rem;
-    margin-bottom: 7rem;
-}
 
 
-.caixas {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.caixa {
-    display: flex;
-    flex-direction: column;
-}
-
-input {
-    border: 2px solid #4b006b;
-    width: 25rem;
-    height: 15rem;
-    border-radius: 10px;
-    margin-top: 1rem;
-    font-size: 2rem;
-    text-align: center;
-}
-
-
-.curracy {
-    width: 7rem;
-    height: 3rem;
-    border-radius: 1rem;
-    border: 2px solid #fff;
-    background: #4b006b;
-    color: #fff;
-    font-size: 1.1rem;
-}
-
-.buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 5rem;
-} 
-
-label {
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-
-.btnConverter {
-    width: 13rem;
-    height: 3rem;
-}
-
-option::placeholder {
-    background-color: #4b006b;
-}
-
-select {
-    text-align: center;
-    border: none;
-    outline: none;
-}
-
-.result{
-    border: 2px solid #4b006b;
-    width: 25rem;
-    height: 15rem;
-    border-radius: 10px;
-    margin-top: 1rem;
-    font-size: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
