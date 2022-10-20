@@ -71,8 +71,6 @@ button:hover {
     -moz-box-shadow: 26px 26px 68px -16px rgba(0,0,0,0.66);
 }
 
-
-
 .container {
     margin: 3rem;
 }
@@ -82,8 +80,8 @@ button:hover {
     align-items: center;
     margin: 1rem;
     justify-content: center;
+    gap: 5rem;
 }
-
 
 
 
@@ -96,9 +94,15 @@ button:hover {
 .containerItensText p{
     padding: 0.2rem;
     color: #fff;
-    text-align: center;
     font-size: 1.1rem;
-    
+    text-align: justify;
+
+}
+
+.textInicial {
+    width: 55rem;
+    line-height: 1.5rem;
+
 }
 
 .title {
@@ -134,9 +138,3 @@ button:hover {
     width: 17rem;
     height: 4rem ;
 }
-
-
-
-
-
-
